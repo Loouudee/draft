@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet"  type= "text/css" href="otput.css">
+</head>
+<body>
+    
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+          <i class="fas fa-bars"></i>
+        </label>
+        <img src="logo.jpg" width="150" height="90">
+        <ul>
+          <li><a href="webpage1.html">Home</a></li>
+          <li><a href="webpage2.html">About</a></li>
+          <li><a href="webpage3.html">Socials</a></li>
+          <li><a class="active" href="webpage4.html">Feedback</a></li>
+        </ul>
+      </nav>
+      <section></section>
+        <br>
+        <div class="contents">
+            <div id="forms">
+                <p>Application Sent</p>
+                <br>
+            </div>
+            
+            <script>
+        const list = document.getElementById('forms')
+        new URLSearchParams(window.location.search).forEach((value,name) =>
+        {
+            
+            list.append(`${name}: ${value}`)
+            list.append(document.createElement('br'))
+            list.append(document.createElement('br'))
+        }
+        )
+            </script>
+
+        <a href="webpage4.html">New Application >>></a>
+        </div>
+        
+
+ 
+
+     
+
+
+
+</body>
+</html>
